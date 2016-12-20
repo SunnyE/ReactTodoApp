@@ -1,14 +1,14 @@
 {
-  "name": "boilerplate",
+  "name": "Todo App",
   "version": "1.0.0",
-  "description": "Simple react app",
+  "description": "React todo app",
   "main": "index.js",
   "scripts": {
     "test": "karma start",
     "start": "node server.js"
   },
-  "author": "Andrew Mead",
-  "license": "MIT",
+  "author": "Ethan Favia",
+  "license": "",
   "dependencies": {
     "axios": "^0.9.1",
     "express": "^4.13.4",
