@@ -46,7 +46,14 @@ var TodoApp = React.createClass({
         })
     },
     handleToggle: function (id) {
-        alert(id);
+        var updatedTodos = this.state.todos.map((todo) => {
+            if(todo.id === id) {
+                todo.completed = !todo.completed;
+            }
+            return todos;
+        });
+        
+        this.setState({todos: updatedTodos});
     },
     handleSearch: function (showCompleted, searchText) {
         this.setState({
