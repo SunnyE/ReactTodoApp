@@ -25,7 +25,8 @@ var TodoApp = React.createClass({
                     id: uuid(),
                     text: text,
                     completed: false,
-                    createdAt: moment().unix()
+                    createdAt: moment().unix(),
+                    comepletedAt: undefined
                 }
             ]
         })
@@ -34,6 +35,7 @@ var TodoApp = React.createClass({
         var updatedTodos = this.state.todos.map((todo) => {
             if(todo.id === id) {
                 todo.completed = !todo.completed;
+                todo.comepletedAt = todo.completed ? moment().unix() : undefined;
             }
             return todos;
         });
