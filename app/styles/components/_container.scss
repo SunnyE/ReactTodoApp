@@ -21,6 +21,11 @@
     }
 }
 
+.container__message {
+    color: $light-color; 
+    margin: 2rem;
+    text-align: center;
+}
 
 .container__footer {
     border-top: 1px solid $light-grey-border; 
