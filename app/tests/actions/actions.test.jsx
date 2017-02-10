@@ -1,0 +1,12 @@
+var expect = require('expect');
+var actions = require('actions');
+
+describe('Actions', ()=> {
+    it('should generate search text actions', () => {
+        var action ={
+            type: 'SET_SEARCH_TEXT',
+            searchText:'Some text to search'
+        };
+        
+    });
+});
