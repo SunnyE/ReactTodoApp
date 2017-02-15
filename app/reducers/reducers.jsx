@@ -6,3 +6,14 @@ export var searchTextReducer = (state = '', action) => {
             return state;
     };
 };
+
+// showCompletedReducer, default false, TOGGGLE_SHOW_COMPLETED
+
+export var showCompletedReducer = (state = false, action) => {
+    switch(action.type) {
+        case 'TOGGLE_SHOW_COMPLETED':
+            !state;
+        default:
+            return state;
+    }
+}
